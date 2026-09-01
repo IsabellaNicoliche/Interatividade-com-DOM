@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trilha do Saber PFC</title>
+<style>
+  body{
+    font-family: system-ui, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+    line-height: 1.6;
+
+    /* modo claro (padrão) */
+    background-color: #ffffff;
+    color: #2b1b3d;
+
+    transition: background-color .3s, color .3s;
+  }
+
+  header{
+    border-bottom: 3px solid #e5397f;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+  }
+  h1{ margin: 0 0 5px; color: #7b2ff7; }
+  h2{ color: #e5397f; margin-top: 30px; }
+
+  .caixa{
+    border: 2px solid #7b2ff7;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+
+  input{
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 220px;
+  }
+
+  button{
+    background-color: #e5397f;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 4px;
+  }
+  button:hover{ background-color: #c72d6c; }
+
+  #btnModo{ background-color: #7b2ff7; }
+  #btnModo:hover{ background-color: #4a1a94; }
+
+  #mensagem{
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  ul{ padding-left: 20px; }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>Trilha do Saber PFC</h1>
+    <p id="subtitulo">Programa de formação e aprendizagem contínua</p>
+  </header>
+
+  <!-- BOTÃO DE MODO CLARO / ESCURO -->
+  <button id="btnModo">🌙 Modo escuro</button>
+
+  <!-- CAMPO DE ENTRADA DO NOME -->
+  <div class="caixa">
+    <h2>Identifique-se</h2>
+    <p>Digite seu nome para começar a trilha:</p>
+    <input type="text" id="campoNome" placeholder="Seu nome">
+    <button id="btnEnviar">Enviar</button>
+    <p id="mensagem"></p>
+  </div>
+
+  <!-- INFORMAÇÕES DO PROJETO (edite com os dados da sua turma) -->
+  <h2>Sobre o projeto</h2>
+  <p>
+    A Trilha do Saber PFC é um projeto educativo que organiza o aprendizado em etapas,
+    permitindo que cada participante avance no seu próprio ritmo. A proposta une teoria
+    e prática por meio de atividades, oficinas e desafios aplicados.
+  </p>
+
+  <h2>Objetivos</h2>
+  <ul>
+    <li>Estimular a autonomia e o protagonismo dos participantes</li>
+    <li>Aproximar o conteúdo estudado de situações reais</li>
+    <li>Desenvolver habilidades de pesquisa e trabalho em equipe</li>
+    <li>Reconhecer o progresso de cada etapa concluída</li>
+  </ul>
+
+  <h2>Etapas da trilha</h2>
+  <ul>
+    <li><strong>Trilha 1 — Descoberta:</strong> apresentação do projeto e diagnóstico inicial</li>
+    <li><strong>Trilha 2 — Exploração:</strong> oficinas temáticas e atividades práticas</li>
+    <li><strong>Trilha 3 — Construção:</strong> desenvolvimento do projeto em grupo</li>
+    <li><strong>Trilha 4 — Apresentação:</strong> mostra final dos trabalhos</li>
+  </ul>
+
+  <!-- arquivo JavaScript externo -->
+  <script src="trilha.js"></script>
+
+</body>
+</html>
